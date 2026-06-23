@@ -4,10 +4,14 @@
 
 ![Python](https://img.shields.io/badge/Python-0a7?style=flat-square) ![pandas](https://img.shields.io/badge/pandas-0a7?style=flat-square) ![NumPy](https://img.shields.io/badge/NumPy-0a7?style=flat-square) ![statsmodels](https://img.shields.io/badge/statsmodels-0a7?style=flat-square) ![scikit-learn](https://img.shields.io/badge/scikit--learn-0a7?style=flat-square) ![SciPy](https://img.shields.io/badge/SciPy-0a7?style=flat-square) ![SymPy](https://img.shields.io/badge/SymPy-0a7?style=flat-square) ![seaborn](https://img.shields.io/badge/seaborn-0a7?style=flat-square) ![matplotlib](https://img.shields.io/badge/matplotlib-0a7?style=flat-square) ![Jupyter Notebook](https://img.shields.io/badge/Jupyter_Notebook-0a7?style=flat-square) 
 
+![Applied Numerical Methods](images/diagram.png)
+
 ### 🌐 Live project page → **https://selsaady1.github.io/mat421-numerical-methods/**
 
 ## Overview
 A MAT 421 (Applied Computational Methods) course project analyzing the Instacart Market Basket dataset with numerical and statistical methods in Python. Delivered as a Jupyter notebook (exported to HTML) plus a written project plan, it cleans and merges the relational order files, builds linear regression models relating reorders to products, and inspects model assumptions through residual and distribution diagnostics. A symbolic differentiation step is used to analyze the rate of change of a published prediction equation.
+
+**Highlight:** OLS regression R-squared = 0.742
 
 **Highlight:** OLS regression R-squared = 0.742
 
@@ -37,11 +41,15 @@ The notebook works through four stated problems: data preparation/visualization,
 ## Repository Structure
 ```
 .gitignore
+.nojekyll
 LICENSE
 README.md
 docs/Elsaady_MAT421_PROJECT_1_.html
 docs/Elsaady_Projectplan.pdf
+images/diagram.png
+images/diagram.svg
 images/preview.png
+index.html
 ```
 
 ## Results
