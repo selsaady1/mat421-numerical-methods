@@ -1,0 +1,34 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Applied Numerical Methods — Saif Elsaady</title><style>
+:root{--bg:#0d1117;--card:#161b22;--bd:#30363d;--fg:#e6edf3;--mut:#8b949e;--ac:#58a6ff;--mar:#8c1d40}
+*{box-sizing:border-box}body{margin:0;font-family:-apple-system,Segoe UI,Roboto,Helvetica,Arial,sans-serif;background:var(--bg);color:var(--fg);line-height:1.6}
+a{color:var(--ac);text-decoration:none}.wrap{max-width:860px;margin:0 auto;padding:24px}
+.top{padding:14px 24px;border-bottom:1px solid var(--bd);font-size:.9rem}
+.hero{padding:40px 24px 8px;max-width:860px;margin:0 auto}
+.cat{display:inline-block;background:var(--mar);color:#fff;font-size:.72rem;padding:3px 10px;border-radius:999px;letter-spacing:.04em}
+h1{margin:.4rem 0 .3rem;font-size:2rem}.tag{color:var(--mut);font-size:1.1rem;margin:0 0 14px}
+.metric{display:inline-block;background:#13241a;border:1px solid #1f6f43;color:#3fb950;padding:6px 14px;border-radius:8px;font-weight:700;margin:6px 0}
+.hero-img{margin:18px 0;border:1px solid var(--bd);border-radius:12px;overflow:hidden;max-height:380px;display:flex;justify-content:center;background:#0a0d12}
+.hero-img img{max-width:100%;object-fit:contain}
+h2{font-size:1.15rem;border-left:4px solid var(--mar);padding-left:10px;margin-top:30px}
+ul{padding-left:20px}li{margin:6px 0}
+.chips{display:flex;flex-wrap:wrap;gap:8px}.chip{background:var(--card);border:1px solid var(--bd);border-radius:999px;padding:4px 12px;font-size:.85rem}
+.btns{display:flex;flex-wrap:wrap;gap:12px;margin:26px 0}
+.btn{background:var(--card);border:1px solid var(--bd);border-radius:8px;padding:10px 16px;font-weight:600}
+.btn:hover{border-color:var(--ac)}.btn.primary{background:var(--ac);color:#06101f;border-color:var(--ac)}
+footer{color:var(--mut);font-size:.82rem;border-top:1px solid var(--bd);margin-top:36px;padding:24px;text-align:center}
+</style></head><body>
+<div class="top"><a href="https://selsaady1.github.io/portfolio/">← Portfolio</a> · <a href="https://github.com/selsaady1">github.com/selsaady1</a></div>
+<div class="hero"><span class="cat">Data Science</span><h1>Applied Numerical Methods</h1>
+<p class="tag">Numerical methods applied to Instacart grocery order data in Python</p><div class="metric">OLS regression R-squared = 0.742</div><div class="hero-img"><img src="images/preview.png" alt=""></div></div>
+<div class="wrap">
+<h2>Overview</h2><p>A MAT 421 (Applied Computational Methods) course project analyzing the Instacart Market Basket dataset with numerical and statistical methods in Python. Delivered as a Jupyter notebook (exported to HTML) plus a written project plan, it cleans and merges the relational order files, builds linear regression models relating reorders to products, and inspects model assumptions through residual and distribution diagnostics. A symbolic differentiation step is used to analyze the rate of change of a published prediction equation.</p>
+<h2>Key Achievements</h2><ul><li>Merged and aggregated the multi-file Instacart relational dataset (orders, prior order-products, products, departments, aisles) with pandas, computing per-order product counts and per-product reorder totals across roughly 3.2 million order-product rows</li><li>Fit an OLS linear regression of products on reorders using statsmodels and a 500-user training sample, achieving an R-squared of 0.742 with a fitted slope of 1.093 and intercept of 3.589</li><li>Reproduced the regression coefficients by hand using NumPy (least-squares slope/intercept formulas) to confirm the statsmodels output</li><li>Diagnosed the fit with residual analysis, a QQ plot, a kernel-density residual distribution against a fitted normal, and fit plots, concluding the data is right-skewed</li><li>Applied symbolic differentiation with SymPy to a published quadratic prediction equation to obtain its derivative (rate of change)</li><li>Visualized data distributions with seaborn/matplotlib (product-frequency histogram, days-since-prior-order histogram)</li></ul>
+<h2>Approach</h2><p>The notebook works through four stated problems: data preparation/visualization, linear regression and linear equations, residual and distribution analysis, and differentiation/optimization. It uses pandas to merge and reshape the relational files, statsmodels and scikit-learn for OLS regression, scipy/statsmodels for diagnostic plots, and SymPy for symbolic differentiation. Conclusions are drawn from the regression fit statistics and the diagnostic graphics.</p>
+<h2>Tools &amp; Technologies</h2><div class="chips"><span class="chip">Python</span><span class="chip">pandas</span><span class="chip">NumPy</span><span class="chip">statsmodels</span><span class="chip">scikit-learn</span><span class="chip">SciPy</span><span class="chip">SymPy</span><span class="chip">seaborn</span><span class="chip">matplotlib</span><span class="chip">Jupyter Notebook</span></div>
+<h2>Results</h2><p>The OLS model relating reorders to products reached R-squared = 0.742 (slope 1.093, intercept 3.589) on the 500-user sample, indicating a strong positive linear relationship, with residual diagnostics showing a right-skewed distribution; full analysis is in docs/Elsaady_MAT421_PROJECT_1_.html.</p>
+<div class="btns"><a class="btn primary" href="https://github.com/selsaady1/mat421-numerical-methods">⌨ View source on GitHub</a><a class="btn" href="https://github.com/selsaady1/mat421-numerical-methods/blob/main/docs/Elsaady_MAT421_PROJECT_1_.html">📄 View deliverable</a><a class="btn" href="https://selsaady1.github.io/portfolio/">All projects</a></div>
+</div>
+<footer>Saif Elsaady — Engineering Portfolio · built from real project deliverables</footer>
+</body></html>
